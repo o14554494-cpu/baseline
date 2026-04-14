@@ -1,0 +1,13 @@
+{
+  "subject": "微积分",
+  "notes": "向 items 中追加高质量样题。优先补充函数、反函数、定义域、极限、导数、积分、证明题等题型。",
+  "example_item": {
+    "question_id": "CAL_DEMO_001",
+    "type": "计算题",
+    "difficulty": "基础",
+    "question": "已知函数 f(x)=\\frac{x-1}{x+2}，求函数的反函数。",
+    "reasoning_process": "先设 y=f(x)，再通过代数变形把 x 用 y 表示，最后交换 x 与 y 得到反函数表达式，并补充分母限制条件。",
+    "answer": "f^{-1}(x)=..."
+  },
+  "items": []
+}

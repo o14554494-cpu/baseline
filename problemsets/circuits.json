@@ -1,0 +1,13 @@
+{
+  "subject": "电路原理",
+  "notes": "向 items 中追加高质量样题。优先补充串并联、等效电阻、欧姆定律、KCL/KVL 等高频题型。",
+  "example_item": {
+    "question_id": "CIR_DEMO_001",
+    "type": "计算题",
+    "difficulty": "基础",
+    "question": "已知两个电阻并联后接电源，求总电流。",
+    "reasoning_process": "先判断电阻连接方式为并联，再求等效电阻，最后结合欧姆定律 I=U/R 计算总电流。",
+    "answer": "I=U/R_eq"
+  },
+  "items": []
+}

@@ -1,0 +1,13 @@
+{
+  "subject": "线性代数",
+  "notes": "向 items 中追加高质量样题。优先补充矩阵运算、行列式、线性方程组、特征值与特征向量等题型。",
+  "example_item": {
+    "question_id": "LA_DEMO_001",
+    "type": "计算题",
+    "difficulty": "基础",
+    "question": "求矩阵 A 的行列式。",
+    "reasoning_process": "先写出矩阵结构，再选择按行展开、初等变换或公式法，最后给出计算结果并说明关键步骤。",
+    "answer": "|A|=..."
+  },
+  "items": []
+}

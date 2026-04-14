@@ -1,0 +1,13 @@
+{
+  "subject": "基础物理学",
+  "notes": "向 items 中追加高质量样题。每条样题至少包含 question_id、type、difficulty、question、reasoning_process、answer。",
+  "example_item": {
+    "question_id": "PHY_DEMO_001",
+    "type": "计算题",
+    "difficulty": "基础",
+    "question": "一质点做匀变速直线运动，已知初速度、加速度和时间，求末速度。",
+    "reasoning_process": "先提取已知量 v0、a、t。再使用速度公式 v=v0+at，代入并计算，最后检查单位是否为 m/s。",
+    "answer": "v=v0+at"
+  },
+  "items": []
+}
