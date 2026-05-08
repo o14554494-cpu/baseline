@@ -1,8 +1,7 @@
 {
   "subject": "线性代数",
   "source": "《线性代数与几何（上）》俞正光 鲁自群 林润亮 编",
-  "notes": "完整的线性代数问题集，包含教材习题2-7。其中部分题目已通过Kimi API生成推理过程。",
-  "total_count": 153,
+  "notes": "包含教材习题2-7的完整问题集，共153道题目。用于Agent训练和few-shot检索。",
   "items": [
     {
       "question_id": "LA_TR_CH01_001",
