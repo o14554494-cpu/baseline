@@ -1,2 +1,2 @@
-# This baseline uses only Python standard library modules.
-# No third-party packages need to be installed.
+# This baseline uses Python standard library plus sympy for symbolic math enhancements.
+sympy

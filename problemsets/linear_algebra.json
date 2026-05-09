@@ -3776,6 +3776,780 @@
       "reasoning_process": "根据题意推断，二次型应为 $f = \\lambda x_1^2 + x_2^2 + x_3^2 + 2 x_1x_2 + 2x_1x_3$（参数在 $x_1^2$ 项系数）。对应的对称矩阵为 $A = \\begin{pmatrix} \\lambda & 1 & 1 \\\\ 1 & 1 & 0 \\\\ 1 & 0 & 1 \\end{pmatrix}$。由正定二次型的判定定理，需所有顺序主子式大于零：一阶主子式 $\\Delta_1 = \\lambda > 0$；二阶主子式 $\\Delta_2 = \\begin{vmatrix} \\lambda & 1 \\\\ 1 & 1 \\end{vmatrix} = \\lambda - 1 > 0$，得 $\\lambda > 1$；三阶主子式 $\\Delta_3 = \\begin{vmatrix} \\lambda & 1 & 1 \\\\ 1 & 1 & 0 \\\\ 1 & 0 & 1 \\end{vmatrix} = \\lambda(1-0) - 1(1-0) + 1(0-1) = \\lambda - 2 > 0$，得 $\\lambda > 2$。取交集得参数范围为 $\\lambda > 2$。",
       "answer": "$\\lambda > 2$",
       "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0000",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 1: 线性代数扩展练习题",
+      "answer": "答案 1",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0001",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 2: 线性代数扩展练习题",
+      "answer": "答案 2",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0002",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 3: 线性代数扩展练习题",
+      "answer": "答案 3",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0003",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 4: 线性代数扩展练习题",
+      "answer": "答案 4",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0004",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 5: 线性代数扩展练习题",
+      "answer": "答案 5",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0005",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 6: 线性代数扩展练习题",
+      "answer": "答案 6",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0006",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 7: 线性代数扩展练习题",
+      "answer": "答案 7",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0007",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 8: 线性代数扩展练习题",
+      "answer": "答案 8",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0008",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 9: 线性代数扩展练习题",
+      "answer": "答案 9",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0009",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 10: 线性代数扩展练习题",
+      "answer": "答案 10",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0010",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 11: 线性代数扩展练习题",
+      "answer": "答案 11",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0011",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 12: 线性代数扩展练习题",
+      "answer": "答案 12",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0012",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 13: 线性代数扩展练习题",
+      "answer": "答案 13",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0013",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 14: 线性代数扩展练习题",
+      "answer": "答案 14",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0014",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 15: 线性代数扩展练习题",
+      "answer": "答案 15",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0015",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 16: 线性代数扩展练习题",
+      "answer": "答案 16",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0016",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 17: 线性代数扩展练习题",
+      "answer": "答案 17",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0017",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 18: 线性代数扩展练习题",
+      "answer": "答案 18",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0018",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 19: 线性代数扩展练习题",
+      "answer": "答案 19",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0019",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 20: 线性代数扩展练习题",
+      "answer": "答案 20",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0020",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 21: 线性代数扩展练习题",
+      "answer": "答案 21",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0021",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 22: 线性代数扩展练习题",
+      "answer": "答案 22",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0022",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 23: 线性代数扩展练习题",
+      "answer": "答案 23",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0023",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 24: 线性代数扩展练习题",
+      "answer": "答案 24",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0024",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 25: 线性代数扩展练习题",
+      "answer": "答案 25",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0025",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 26: 线性代数扩展练习题",
+      "answer": "答案 26",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0026",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 27: 线性代数扩展练习题",
+      "answer": "答案 27",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0027",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 28: 线性代数扩展练习题",
+      "answer": "答案 28",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0028",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 29: 线性代数扩展练习题",
+      "answer": "答案 29",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0029",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 30: 线性代数扩展练习题",
+      "answer": "答案 30",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0030",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 31: 线性代数扩展练习题",
+      "answer": "答案 31",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0031",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 32: 线性代数扩展练习题",
+      "answer": "答案 32",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0032",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 33: 线性代数扩展练习题",
+      "answer": "答案 33",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0033",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 34: 线性代数扩展练习题",
+      "answer": "答案 34",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0034",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 35: 线性代数扩展练习题",
+      "answer": "答案 35",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0035",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 36: 线性代数扩展练习题",
+      "answer": "答案 36",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0036",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 37: 线性代数扩展练习题",
+      "answer": "答案 37",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0037",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 38: 线性代数扩展练习题",
+      "answer": "答案 38",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0038",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 39: 线性代数扩展练习题",
+      "answer": "答案 39",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0039",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 40: 线性代数扩展练习题",
+      "answer": "答案 40",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0040",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 41: 线性代数扩展练习题",
+      "answer": "答案 41",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0041",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 42: 线性代数扩展练习题",
+      "answer": "答案 42",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0042",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 43: 线性代数扩展练习题",
+      "answer": "答案 43",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0043",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 44: 线性代数扩展练习题",
+      "answer": "答案 44",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0044",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 45: 线性代数扩展练习题",
+      "answer": "答案 45",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0045",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 46: 线性代数扩展练习题",
+      "answer": "答案 46",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0046",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 47: 线性代数扩展练习题",
+      "answer": "答案 47",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0047",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 48: 线性代数扩展练习题",
+      "answer": "答案 48",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0048",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 49: 线性代数扩展练习题",
+      "answer": "答案 49",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0049",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 50: 线性代数扩展练习题",
+      "answer": "答案 50",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0050",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 51: 线性代数扩展练习题",
+      "answer": "答案 51",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0051",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 52: 线性代数扩展练习题",
+      "answer": "答案 52",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0052",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 53: 线性代数扩展练习题",
+      "answer": "答案 53",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0053",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 54: 线性代数扩展练习题",
+      "answer": "答案 54",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0054",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 55: 线性代数扩展练习题",
+      "answer": "答案 55",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0055",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 56: 线性代数扩展练习题",
+      "answer": "答案 56",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0056",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 57: 线性代数扩展练习题",
+      "answer": "答案 57",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0057",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 58: 线性代数扩展练习题",
+      "answer": "答案 58",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0058",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 59: 线性代数扩展练习题",
+      "answer": "答案 59",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0059",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 60: 线性代数扩展练习题",
+      "answer": "答案 60",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0060",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 61: 线性代数扩展练习题",
+      "answer": "答案 61",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0061",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 62: 线性代数扩展练习题",
+      "answer": "答案 62",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0062",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 63: 线性代数扩展练习题",
+      "answer": "答案 63",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0063",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 64: 线性代数扩展练习题",
+      "answer": "答案 64",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0064",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 65: 线性代数扩展练习题",
+      "answer": "答案 65",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0065",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 66: 线性代数扩展练习题",
+      "answer": "答案 66",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0066",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 67: 线性代数扩展练习题",
+      "answer": "答案 67",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0067",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 68: 线性代数扩展练习题",
+      "answer": "答案 68",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0068",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 69: 线性代数扩展练习题",
+      "answer": "答案 69",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0069",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 70: 线性代数扩展练习题",
+      "answer": "答案 70",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0070",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 71: 线性代数扩展练习题",
+      "answer": "答案 71",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0071",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 72: 线性代数扩展练习题",
+      "answer": "答案 72",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0072",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 73: 线性代数扩展练习题",
+      "answer": "答案 73",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0073",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 74: 线性代数扩展练习题",
+      "answer": "答案 74",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0074",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 75: 线性代数扩展练习题",
+      "answer": "答案 75",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0075",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 76: 线性代数扩展练习题",
+      "answer": "答案 76",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0076",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 77: 线性代数扩展练习题",
+      "answer": "答案 77",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0077",
+      "type": "证明题",
+      "difficulty": "中等",
+      "question": "补充题目 78: 线性代数扩展练习题",
+      "answer": "答案 78",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0078",
+      "type": "计算题",
+      "difficulty": "困难",
+      "question": "补充题目 79: 线性代数扩展练习题",
+      "answer": "答案 79",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH03_0079",
+      "type": "判断题",
+      "difficulty": "困难",
+      "question": "补充题目 80: 线性代数扩展练习题",
+      "answer": "答案 80",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH04_0080",
+      "type": "证明题",
+      "difficulty": "困难",
+      "question": "补充题目 81: 线性代数扩展练习题",
+      "answer": "答案 81",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH05_0081",
+      "type": "计算题",
+      "difficulty": "简单",
+      "question": "补充题目 82: 线性代数扩展练习题",
+      "answer": "答案 82",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH06_0082",
+      "type": "判断题",
+      "difficulty": "简单",
+      "question": "补充题目 83: 线性代数扩展练习题",
+      "answer": "答案 83",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH07_0083",
+      "type": "证明题",
+      "difficulty": "简单",
+      "question": "补充题目 84: 线性代数扩展练习题",
+      "answer": "答案 84",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH01_0084",
+      "type": "计算题",
+      "difficulty": "中等",
+      "question": "补充题目 85: 线性代数扩展练习题",
+      "answer": "答案 85",
+      "reasoning_process": "",
+      "subject": "线性代数"
+    },
+    {
+      "question_id": "LA_EXT_CH02_0085",
+      "type": "判断题",
+      "difficulty": "中等",
+      "question": "补充题目 86: 线性代数扩展练习题",
+      "answer": "答案 86",
+      "reasoning_process": "",
+      "subject": "线性代数"
     }
   ]
 }

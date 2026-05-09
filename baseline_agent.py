@@ -28,6 +28,7 @@ import operator
 from pathlib import Path
 import re
 from typing import Any, Dict, List, Sequence
+import sympy as sp
 import urllib.error
 import urllib.request
 
@@ -463,6 +464,8 @@ class BaselineAgent:
             reasoning = str(data.get("reasoning_process", "")).strip()
             answer = str(data.get("answer", "")).strip()
             if reasoning or answer:
+                reasoning = self._clean_model_output(reasoning)
+                answer = self._clean_model_output(answer)
                 return ModelResult(reasoning_process=reasoning, answer=answer)
 
         return None
@@ -473,6 +476,9 @@ class BaselineAgent:
             self._solve_basic_circuit_problem,
             self._solve_linear_algebra_problem,
             self._solve_expression_problem,
+            self._solve_inverse_function_problem,
+            self._solve_domain_problem,
+            self._solve_basic_derivative_integral_problem,
         ):
             result = solver(context)
             if result is not None:
@@ -567,6 +573,102 @@ class BaselineAgent:
             f"计算结果为: {answer}。",
         ]
         return HeuristicResult(answer=answer, reasoning_steps=reasoning_steps, source="基础表达式求值")
+
+    def _solve_inverse_function_problem(self, context: QuestionContext) -> HeuristicResult | None:
+        text = self._normalize_text(context.question)
+        if "反函数" not in text:
+            return None
+
+        # Extract function expression, e.g., f(x) = ...
+        func_match = re.search(r"f\(x\)\s*=\s*(.+)", text)
+        if not func_match:
+            return None
+
+        expr_str = func_match.group(1).strip()
+        try:
+            x = sp.Symbol('x')
+            expr = sp.sympify(expr_str)
+            inverse_expr = sp.solve(sp.Eq(sp.Symbol('y'), expr), x)[0]
+            inverse_str = str(inverse_expr)
+            answer = f"f^{-1}(x) = {inverse_str}"
+            reasoning_steps = [
+                f"设 y = {expr_str}。",
+                f"解方程 y = {expr_str} 得 x = {inverse_str}。",
+                f"因此反函数为 f^{-1}(x) = {inverse_str}。",
+            ]
+            return HeuristicResult(answer=answer, reasoning_steps=reasoning_steps, source="反函数计算")
+        except Exception:
+            return None
+
+    def _solve_domain_problem(self, context: QuestionContext) -> HeuristicResult | None:
+        text = self._normalize_text(context.question)
+        if "定义域" not in text:
+            return None
+
+        func_match = re.search(r"f\(x\)\s*=\s*(.+)", text)
+        if not func_match:
+            return None
+
+        expr_str = func_match.group(1).strip()
+        try:
+            x = sp.Symbol('x')
+            expr = sp.sympify(expr_str)
+            # Find domain by solving denominators !=0 and under sqrt >=0, etc.
+            # Simple case: denominators
+            denominators = sp.denom(expr)
+            if denominators != 1:
+                domain_condition = sp.Ne(denominators, 0)
+                solution = sp.solve(domain_condition)
+                if solution:
+                    domain_str = f"x ≠ {', '.join(str(s) for s in solution)}"
+                else:
+                    domain_str = "所有实数"
+            else:
+                domain_str = "所有实数"
+            answer = domain_str
+            reasoning_steps = [
+                f"函数 f(x) = {expr_str}。",
+                "定义域为使分母不为零的 x 值。",
+                f"解得 {domain_str}。",
+            ]
+            return HeuristicResult(answer=answer, reasoning_steps=reasoning_steps, source="定义域计算")
+        except Exception:
+            return None
+
+    def _solve_basic_derivative_integral_problem(self, context: QuestionContext) -> HeuristicResult | None:
+        text = self._normalize_text(context.question)
+        is_derivative = "导数" in text or "d/dx" in text
+        is_integral = "积分" in text or "∫" in text
+        if not (is_derivative or is_integral):
+            return None
+
+        func_match = re.search(r"f\(x\)\s*=\s*(.+)", text)
+        if not func_match:
+            return None
+
+        expr_str = func_match.group(1).strip()
+        try:
+            x = sp.Symbol('x')
+            expr = sp.sympify(expr_str)
+            if is_derivative:
+                result_expr = sp.diff(expr, x)
+                operation = "导数"
+                symbol = "'"
+            elif is_integral:
+                result_expr = sp.integrate(expr, x)
+                operation = "不定积分"
+                symbol = "∫"
+            result_str = str(result_expr)
+            answer = f"{result_str} + C" if is_integral else result_str
+            reasoning_steps = [
+                f"函数 f(x) = {expr_str}。",
+                f"求{operation}：{symbol}f(x) = {result_str}。",
+            ]
+            if is_integral:
+                reasoning_steps.append("不定积分加常数 C。")
+            return HeuristicResult(answer=answer, reasoning_steps=reasoning_steps, source=f"基础{operation}计算")
+        except Exception:
+            return None
 
     def _solve_linear_algebra_problem(self, context: QuestionContext) -> HeuristicResult | None:
         text = self._normalize_text(context.question)
@@ -1007,3 +1109,12 @@ class BaselineAgent:
             if message:
                 return str(message)
         return body.strip()[:200]
+
+    def _clean_model_output(self, text: str) -> str:
+        # Remove LaTeX delimiters
+        text = re.sub(r'\$\$?(.*?)\$\$?', r'\1', text)
+        # Remove markdown code blocks
+        text = re.sub(r'```.*?```', '', text, flags=re.DOTALL)
+        # Remove extra newlines
+        text = re.sub(r'\n+', '\n', text).strip()
+        return text
